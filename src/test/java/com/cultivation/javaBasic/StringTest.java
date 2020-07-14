@@ -133,6 +133,16 @@ class StringTest {
         // TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
+
+        for(int i=0;i<3;i++){
+            builder.append("|");
+            if(i!=1){
+                builder.append("---");
+            }else {
+                builder.append("   ");
+            }
+            builder.append("|\n");
+        }
         // --End-->
 
         final String expected =
